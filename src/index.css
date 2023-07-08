@@ -5,9 +5,133 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+
+  box-shadow: 5px 2px 5px 5px #dadada;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav {
+  background-color: #0A192F;
+  color: #eee;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 15px;
+  margin-top: 65px;
+  background-color: #0A192F;
+  color: #eee;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 15px;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 15px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.input {
+  margin: 10px;
+  padding: 10px;
+}
+
+.predict {
+  font-size: large;
+  text-align: center;
+  color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0A192F;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .option {
+    width: 300px;
+  }
+  .button{
+    width: 300px;
+  }
+
+  span {
+    font-size: 18px;
+    flex-wrap: nowrap;
+  }
+
+  form {
+    width: 350px;
+  }
 }
